@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Rehman Javaid · Web Developer &amp; SEO, Karachi</title>
+<meta name="description" content="Web developer and SEO specialist in Karachi. Building client sites, content platforms, and AI-powered products since 2020, with Search Console data to prove it.">
+<meta property="og:title" content="Abdul Rehman Javaid · Web Developer &amp; SEO">
+<meta property="og:description" content="Websites that get found. Client sites, content platforms, and AI-powered products, built and ranked since 2020.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,401,700&f[]=general-sans@400,401,500,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdul Rehman Javaid",
+  "jobTitle": "Web Developer & SEO Specialist",
+  "email": "mailto:abdulrehmanjavaid16@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
+  "sameAs": [
+    "https://www.linkedin.com/in/arjcs123/",
+    "https://github.com/Arjcodes123"
+  ]
+}
+</script>
+<style>
+  :root{
+    --paper:#ffffff;
+    --ink:#121315;
+    --muted:#62666d;
+    --faint:#9a9ea5;
+    --hairline:#e7e7e4;
+    --wash:#f7f7f5;
+    --link:#1539cf;
+    --visited:#681da8;
+    --serp-green:#0a652f;
+    --ok:#0e8a4d;
+    --font-display:"Zodiak",Georgia,serif;
+    --font-body:"General Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --font-mono:"JetBrains Mono","SF Mono",Consolas,monospace;
+    --max:1120px;
+    --pad:clamp(20px,4vw,48px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:1.0625rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--link);color:#fff}
+  a{color:inherit}
+
+  .wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+  .mono{
+    font-family:var(--font-mono);
+    font-size:.72rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-weight:500;
+  }
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hairline);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    height:64px;
+  }
+  .brand{text-decoration:none;color:var(--ink)}
+  nav.main-nav{display:flex;gap:clamp(16px,3vw,36px);align-items:center}
+  nav.main-nav a{
+    text-decoration:none;color:var(--muted);
+    font-size:.9rem;font-weight:500;
+    transition:color .15s ease;
+  }
+  nav.main-nav a:hover{color:var(--ink)}
+  .avail{
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--ink);
+  }
+  .avail .dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--ok);
+    box-shadow:0 0 0 0 rgba(14,138,77,.45);
+    animation:pulse 2.4s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(14,138,77,.40)}
+    70%{box-shadow:0 0 0 7px rgba(14,138,77,0)}
+    100%{box-shadow:0 0 0 0 rgba(14,138,77,0)}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(72px,11vh,140px) 0 clamp(56px,8vh,96px)}
+  .hero .eyebrow{color:var(--muted);margin-bottom:28px;display:block}
+  h1{
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(2.6rem,6.4vw,5.2rem);
+    line-height:1.06;
+    letter-spacing:-.015em;
+    max-width:16ch;
+  }
+  h1 em{font-style:italic;font-weight:401}
+  .found{
+    color:var(--link);
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:.14em;
+    transition:color .2s ease;
+    cursor:help;
+  }
+  .found:hover{color:var(--visited)}
+  .hero p.lede{
+    margin-top:32px;
+    max-width:54ch;
+    font-size:clamp(1.05rem,1.5vw,1.2rem);
+    color:var(--muted);
+  }
+  .hero-cta{margin-top:44px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--ink);color:#fff;
+    text-decoration:none;
+    padding:15px 26px;border-radius:100px;
+    font-weight:500;font-size:.95rem;
+    transition:background .18s ease,transform .18s ease;
+  }
+  .btn:hover{background:var(--link);transform:translateY(-1px)}
+  .btn svg{width:17px;height:17px}
+  .textlink{
+    text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;
+    border-bottom:1px solid var(--ink);padding-bottom:2px;
+    transition:color .15s ease,border-color .15s ease;
+  }
+  .textlink:hover{color:var(--link);border-color:var(--link)}
+
+  /* ---------- proof strip ---------- */
+  .proof{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+  .proof-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+  }
+  .proof-item{
+    padding:30px 24px 30px 0;
+  }
+  .proof-item + .proof-item{border-left:1px solid var(--hairline);padding-left:24px}
+  .proof-item .num{
+    font-family:var(--font-display);
+    font-size:clamp(1.7rem,2.6vw,2.3rem);
+    line-height:1.1;
+  }
+  .proof-item .label{color:var(--muted);margin-top:6px;font-size:.82rem;line-height:1.45}
+
+  /* ---------- sections ---------- */
+  section{padding:clamp(72px,10vh,128px) 0}
+  .section-head{margin-bottom:clamp(40px,6vh,64px)}
+  .section-head .mono{color:var(--faint);display:block;margin-bottom:14px}
+  h2{
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(2rem,4vw,3.1rem);
+    line-height:1.12;
+    letter-spacing:-.01em;
+  }
+  .section-head p{margin-top:16px;color:var(--muted);max-width:52ch}
+
+  /* ---------- case studies ---------- */
+  .case{
+    display:grid;
+    grid-template-columns:minmax(0,300px) minmax(0,1fr);
+    gap:clamp(28px,5vw,72px);
+    padding:clamp(40px,6vh,64px) 0;
+    border-top:1px solid var(--hairline);
+  }
+  .case-meta .mono{color:var(--faint);display:block;margin-bottom:10px}
+  .case-meta h3{
+    font-family:var(--font-display);
+    font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem);
+    line-height:1.18;
+  }
+  .case-meta h3 a{text-decoration:none;transition:color .15s ease}
+  .case-meta h3 a:hover{color:var(--link)}
+  .case-meta .year{margin-top:14px;color:var(--muted);font-size:.85rem}
+  .case-body p{color:var(--ink);max-width:60ch}
+  .case-body p + p{margin-top:14px}
+  .case-body .visit{display:inline-block;margin-top:22px}
+
+  /* ---------- SERP block (signature) ---------- */
+  .serp{
+    margin-top:30px;
+    border:1px solid var(--hairline);
+    border-radius:14px;
+    background:var(--wash);
+    padding:clamp(18px,2.6vw,30px);
+  }
+  .serp-head{
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+    margin-bottom:18px;flex-wrap:wrap;
+  }
+  .serp-head .mono{color:var(--faint)}
+  .serp-result{
+    background:#fff;
+    border:1px solid var(--hairline);
+    border-radius:10px;
+    padding:14px 18px;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  .serp-result + .serp-result{margin-top:10px}
+  .serp-q{min-width:0}
+  .serp-q .title{
+    color:var(--link);
+    font-size:1rem;font-weight:500;line-height:1.35;
+  }
+  .serp-q .url{
+    color:var(--serp-green);
+    font-size:.8rem;margin-top:2px;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+  .serp-stat{
+    text-align:right;flex-shrink:0;
+    font-family:var(--font-mono);
+    font-size:.72rem;letter-spacing:.04em;
+    color:var(--muted);line-height:1.6;
+  }
+  .serp-stat b{color:var(--ink);font-weight:500}
+  .serp-totals{
+    display:flex;gap:clamp(18px,3vw,40px);flex-wrap:wrap;
+    margin-top:20px;padding-top:18px;
+    border-top:1px solid var(--hairline);
+  }
+  .serp-totals div .v{
+    font-family:var(--font-display);font-size:1.45rem;line-height:1.2;
+  }
+  .serp-totals div .k{font-size:.78rem;color:var(--muted);margin-top:2px}
+  .serp-foot{margin-top:16px;font-size:.78rem;color:var(--faint)}
+
+  /* ---------- index list ---------- */
+  .index-list{border-top:1px solid var(--hairline)}
+  .index-row{
+    display:grid;
+    grid-template-columns:minmax(0,260px) minmax(0,1fr) auto;
+    gap:clamp(16px,3vw,40px);
+    align-items:baseline;
+    padding:22px 0;
+    border-bottom:1px solid var(--hairline);
+    text-decoration:none;color:inherit;
+    transition:padding-left .2s ease;
+  }
+  a.index-row:hover{padding-left:10px}
+  a.index-row:hover .index-name{color:var(--link)}
+  .index-name{
+    font-family:var(--font-display);
+    font-size:1.25rem;font-weight:400;
+    transition:color .15s ease;
+  }
+  .index-desc{color:var(--muted);font-size:.95rem}
+  .index-tag{color:var(--faint);white-space:nowrap}
+  .tag-dev{color:var(--ok)}
+
+  /* ---------- services ---------- */
+  .services{background:var(--wash);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+  .svc-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);
+    gap:clamp(28px,4vw,56px);
+  }
+  .svc h3{
+    font-family:var(--font-display);font-weight:400;
+    font-size:1.45rem;margin-bottom:14px;line-height:1.25;
+  }
+  .svc p{color:var(--muted);font-size:.97rem}
+  .svc .mono{color:var(--faint);display:block;margin-bottom:16px}
+
+  /* ---------- about ---------- */
+  .about-grid{
+    display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);
+    gap:clamp(28px,5vw,72px);
+  }
+  .about-body p{max-width:62ch}
+  .about-body p + p{margin-top:18px}
+
+  /* ---------- contact ---------- */
+  .contact{text-align:left}
+  .contact h2{max-width:18ch}
+  .contact .lede{margin-top:18px;color:var(--muted);max-width:46ch}
+  .contact-actions{margin-top:40px;display:flex;gap:18px;flex-wrap:wrap}
+  .btn.ghost{
+    background:transparent;color:var(--ink);
+    border:1px solid var(--ink);
+  }
+  .btn.ghost:hover{background:var(--ink);color:#fff;transform:translateY(-1px)}
+  .contact-meta{
+    margin-top:48px;display:flex;gap:clamp(20px,4vw,48px);flex-wrap:wrap;
+    border-top:1px solid var(--hairline);padding-top:28px;
+  }
+  .contact-meta a{
+    text-decoration:none;color:var(--muted);font-size:.92rem;
+    transition:color .15s ease;
+  }
+  .contact-meta a:hover{color:var(--link)}
+  .contact-meta .k{display:block;color:var(--faint);margin-bottom:6px}
+
+  /* ---------- footer ---------- */
+  footer{
+    border-top:1px solid var(--hairline);
+    padding:32px 0 40px;
+  }
+  .foot-inner{
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    color:var(--faint);font-size:.85rem;
+  }
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .avail .dot{animation:none}
+    *{transition:none!important}
+  }
+
+  :focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:880px){
+    .proof-grid{grid-template-columns:1fr 1fr}
+    .proof-item{padding:22px 18px 22px 0}
+    .proof-item + .proof-item{padding-left:18px}
+    .proof-item:nth-child(3){border-left:none;padding-left:0;border-top:1px solid var(--hairline)}
+    .proof-item:nth-child(4){border-top:1px solid var(--hairline)}
+    .case,.about-grid{grid-template-columns:1fr;gap:20px}
+    .svc-grid{grid-template-columns:1fr;gap:36px}
+    .index-row{grid-template-columns:1fr;gap:4px}
+    .index-tag{order:-1}
+    nav.main-nav a.nav-link{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="brand mono" href="#top">Abdul Rehman Javaid</a>
+    <nav class="main-nav" aria-label="Main">
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="avail mono" href="#contact"><span class="dot" aria-hidden="true"></span>Available</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow mono reveal">Web developer &amp; SEO · Karachi, working anywhere</span>
+      <h1 class="reveal">I build websites that <span class="found" title="Hover: that's what a visited link looks like. Your customers will know the feeling.">get found</span>.</h1>
+      <p class="lede reveal">Business sites, content platforms, and AI-powered products: designed, built, ranked, and maintained by one person since 2020. No agency overhead, no hand-offs, no templates.</p>
+      <div class="hero-cta reveal">
+        <a class="btn" href="https://wa.me/923213033907" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.87-9.9 9.87m8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.31-1.65a11.9 11.9 0 0 0 5.68 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></svg>
+          Message me on WhatsApp
+        </a>
+        <a class="textlink" href="#work">See the work ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PROOF STRIP ============ -->
+  <div class="proof">
+    <div class="wrap proof-grid">
+      <div class="proof-item reveal">
+        <div class="num">45.4K</div>
+        <div class="label">Google impressions on one client site, last 16 months</div>
+      </div>
+      <div class="proof-item reveal">
+        <div class="num">Page 1</div>
+        <div class="label">for "kitchen design karachi" and other buyer searches</div>
+      </div>
+      <div class="proof-item reveal">
+        <div class="num">50+</div>
+        <div class="label">websites and products built across six years, client work and my own</div>
+      </div>
+      <div class="proof-item reveal">
+        <div class="num">AI</div>
+        <div class="label">route optimizers, computer vision tools, predictive engines: shipped and live, not demos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ WORK ============ -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="mono">Selected work</span>
+        <h2>Projects that earn their keep.</h2>
+        <p>Nothing here is a mockup or a tutorial clone. Every project below is live, used by real people, and most of them make or save someone money.</p>
+      </div>
+
+      <!-- Case 1: WoodMark -->
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="mono">Client · SEO &amp; web</span>
+          <h3><a href="https://woodmark-kitchen.com" target="_blank" rel="noopener">WoodMark Kitchen</a></h3>
+          <div class="year">2020, ongoing</div>
+        </div>
+        <div class="case-body">
+          <p>A Karachi kitchen-design business that needed to show up where customers actually look: the first page of Google. I built the site and have kept optimizing it ever since, page structure, content, and the unglamorous on-page work that compounds over time.</p>
+          <p>The result isn't a vanity metric. These are the searches a person types right before they spend money on a kitchen:</p>
+
+          <div class="serp" role="figure" aria-label="Real Google Search Console rankings for woodmark-kitchen.com">
+            <div class="serp-head">
+              <span class="mono">Live Google rankings</span>
+              <span class="mono">woodmark-kitchen.com</span>
+            </div>
+            <div class="serp-result">
+              <div class="serp-q">
+                <div class="title">kitchen design karachi</div>
+                <div class="url">woodmark-kitchen.com</div>
+              </div>
+              <div class="serp-stat"><b>1,092</b> impressions<br><b>28</b> clicks</div>
+            </div>
+            <div class="serp-result">
+              <div class="serp-q">
+                <div class="title">glass wardrobe price in pakistan</div>
+                <div class="url">woodmark-kitchen.com</div>
+              </div>
+              <div class="serp-stat"><b>614</b> impressions<br><b>82</b> clicks</div>
+            </div>
+            <div class="serp-result">
+              <div class="serp-q">
+                <div class="title">kitchen renovation karachi</div>
+                <div class="url">woodmark-kitchen.com</div>
+              </div>
+              <div class="serp-stat"><b>451</b> impressions<br><b>28</b> clicks</div>
+            </div>
+            <div class="serp-result">
+              <div class="serp-q">
+                <div class="title">best kitchen designer in karachi</div>
+                <div class="url">woodmark-kitchen.com</div>
+              </div>
+              <div class="serp-stat"><b>336</b> impressions<br><b>15</b> clicks</div>
+            </div>
+            <div class="serp-totals">
+              <div><div class="v">45.4K</div><div class="k">total impressions</div></div>
+              <div><div class="v">1.16K</div><div class="k">total clicks</div></div>
+              <div><div class="v">9.7</div><div class="k">average position</div></div>
+            </div>
+            <div class="serp-foot">Source: Google Search Console, trailing 16 months. Happy to share the full report on a call.</div>
+          </div>
+
+          <a class="textlink visit" href="https://woodmark-kitchen.com" target="_blank" rel="noopener">Visit woodmark-kitchen.com →</a>
+        </div>
+      </article>
+
+      <!-- Case 2: Locovise -->
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="mono">Own product · AI</span>
+          <h3><a href="https://locovise.com" target="_blank" rel="noopener">Locovise</a></h3>
+          <div class="year">2025, live paid product</div>
+        </div>
+        <div class="case-body">
+          <p>A travel-itinerary optimizer: give it the places you want to visit, and it computes the smartest route between them using real road data. A working solution to the classic travelling-salesman problem, wrapped in a product non-technical travelers actually use.</p>
+          <p>It started as an AI coursework project and is now a commercial product, with optimized routing, exportable PDF itineraries, and calendar integration. Designing the algorithms was the easy half; turning them into something people pay for was the real work.</p>
+          <a class="textlink visit" href="https://locovise.com" target="_blank" rel="noopener">Visit locovise.com →</a>
+        </div>
+      </article>
+
+      <!-- Case 3: Painless Programming -->
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="mono">Own platform · Content</span>
+          <h3><a href="https://painlessprogramming.com" target="_blank" rel="noopener">Painless Programming</a></h3>
+          <div class="year">2025, ongoing</div>
+        </div>
+        <div class="case-body">
+          <p>A computer-science learning platform I write and run: 80+ structured tutorials covering C and C++, Python, AI and algorithms, computer architecture, and complete IGCSE and A-Level curricula. The hard concepts, explained without the textbook fog.</p>
+          <p>In its first year it grew to roughly 500 monthly readers on a marketing budget of exactly zero. Proof that I can build an audience around content, not just code.</p>
+          <a class="textlink visit" href="https://painlessprogramming.com" target="_blank" rel="noopener">Visit painlessprogramming.com →</a>
+        </div>
+      </article>
+
+      <!-- Index of everything else -->
+      <div style="margin-top:clamp(48px,7vh,80px)">
+        <div class="section-head reveal" style="margin-bottom:28px">
+          <span class="mono">Also built</span>
+        </div>
+        <div class="index-list reveal">
+          <a class="index-row" href="https://mathuser.com" target="_blank" rel="noopener">
+            <span class="index-name">mathuser.com</span>
+            <span class="index-desc">Interactive university-math notes with rendered equations and animations. 200+ monthly readers within weeks of launch.</span>
+            <span class="index-tag mono">2026 · Own</span>
+          </a>
+          <a class="index-row" href="https://imgquick.com" target="_blank" rel="noopener">
+            <span class="index-name">imgquick.com</span>
+            <span class="index-desc">Free in-browser image toolkit: compress, convert, enhance, and apply artistic effects like sketch and watercolour.</span>
+            <span class="index-tag mono">2026 · Own</span>
+          </a>
+          <a class="index-row" href="https://kitchen-artisan.com" target="_blank" rel="noopener">
+            <span class="index-name">kitchen-artisan.com</span>
+            <span class="index-desc">Second kitchen-industry site, three months old and already picking up Google rankings.</span>
+            <span class="index-tag mono">2026 · Client</span>
+          </a>
+          <div class="index-row">
+            <span class="index-name">Fresh Online</span>
+            <span class="index-desc">E-commerce storefront with a full admin dashboard for a Karachi grocery-delivery business: products, orders, and status management.</span>
+            <span class="index-tag mono">2026 · Client</span>
+          </div>
+          <a class="index-row" href="https://noorulhudaedu.com" target="_blank" rel="noopener">
+            <span class="index-name">noorulhudaedu.com</span>
+            <span class="index-desc">Website for an educational institution: clean, fast, and easy for staff to keep updated.</span>
+            <span class="index-tag mono">Client</span>
+          </a>
+          <a class="index-row" href="https://zfuze.com" target="_blank" rel="noopener">
+            <span class="index-name">zfuze.com</span>
+            <span class="index-desc">Golf-swing analysis from a single video: tempo, rotation, and weight shift, measured automatically with computer vision.</span>
+            <span class="index-tag mono tag-dev">In development</span>
+          </a>
+          <div class="index-row">
+            <span class="index-name">Adzoc</span>
+            <span class="index-desc">Next product in the pipeline. Details soon.</span>
+            <span class="index-tag mono tag-dev">In development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="mono">What I can do for you</span>
+        <h2>Three things, done properly.</h2>
+      </div>
+      <div class="svc-grid">
+        <div class="svc reveal">
+          <span class="mono">Build</span>
+          <h3>Websites that work</h3>
+          <p>Business sites, e-commerce, landing pages, dashboards. Fast, responsive, and built to turn visitors into enquiries, then maintained, not abandoned. My oldest client site has been running since 2020.</p>
+        </div>
+        <div class="svc reveal">
+          <span class="mono">Rank</span>
+          <h3>SEO you can see in the data</h3>
+          <p>Keyword strategy, on-page optimization, and content that climbs. I measure results in Search Console reports, not promises. I'll show you the charts before you hire me and after.</p>
+        </div>
+        <div class="svc reveal">
+          <span class="mono">Automate</span>
+          <h3>AI-powered products &amp; tools</h3>
+          <p>Custom tools that use AI where it genuinely helps: route optimization, video analysis, image processing, content systems. If part of your business can be automated, I can probably build it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="section-head reveal" style="margin-bottom:0">
+        <span class="mono">About</span>
+        <h2>One developer.<br>Measured results.</h2>
+      </div>
+      <div class="about-body reveal">
+        <p>I'm Abdul Rehman, a developer based in Karachi. I shipped my first client website in 2020, back when building one meant actually building it, and I've been at it ever since: client sites, content platforms with real readerships, and my own commercial products.</p>
+        <p>My background is in serious computer science, the kind with processor architecture, algorithms, and probability theory in it, which shapes how I work: decisions come from measured evidence, not guesses. Before-and-after comparisons, search data, real numbers. If I tell you something works, I can show you the chart.</p>
+        <p>I work directly with every client. No account managers, no outsourcing, no disappearing after launch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="mono" style="color:var(--faint);display:block;margin-bottom:14px">Contact</span>
+        <h2>Tell me what you're building.</h2>
+        <p class="lede">The fastest way to reach me is WhatsApp. I reply to everything. Or send an email with a line or two about your project, and I'll come back with questions, not a sales pitch.</p>
+        <div class="contact-actions">
+          <a class="btn" href="https://wa.me/923213033907" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.87-9.9 9.87m8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.31-1.65a11.9 11.9 0 0 0 5.68 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></svg>
+            +92 321 3033907
+          </a>
+          <a class="btn ghost" href="mailto:abdulrehmanjavaid16@gmail.com">abdulrehmanjavaid16@gmail.com</a>
+        </div>
+        <div class="contact-meta">
+          <div>
+            <span class="k mono">Elsewhere</span>
+            <a href="https://www.linkedin.com/in/arjcs123/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+            <a href="https://github.com/Arjcodes123" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <div>
+            <span class="k mono">Based in</span>
+            <span style="font-size:.92rem;color:var(--muted)">Karachi, Pakistan. Working with clients anywhere.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>© <span id="yr">2026</span> Abdul Rehman Javaid</span>
+    <span>Hand-built. No template, no page builder. View source if you don't believe it.</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
